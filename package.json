@@ -1,0 +1,8 @@
+{
+  "name": "roman.zone",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
