@@ -1,0 +1,162 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+$grey: #888;
+$very-grey: #444;
+$blue: #0483c3;
+
+$text-color: #333;
+$link-color: $blue;
+
+
+// Text styles
+
+@mixin text-regular {
+  font: {
+    family: "Charter";
+    size: 21px;
+  }
+  color: $text-color;
+  line-height: 34px;
+}
+
+@mixin text-code {
+  @include text-regular;
+  font: {
+    family: "Inconsolata", Courier, monospace;
+  }
+}
+
+
+// Generic elements
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid $link-color;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font: {
+    size: 44px;
+    style: normal;
+    weight: normal;
+  }
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+// Content
+
+body {
+  @include text-regular;
+  background-color: $white;
+  margin: 0;
+  padding: {
+    top: 20px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+  }
+  max-width: 700px;
+
+  header {
+    margin: {
+      top: 18px;
+      bottom: 46px;
+    }
+  }
+
+  .content {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  #content-index {
+    ul {
+      list-style: none;
+    }
+  }
+
+  #content-projects {
+
+    div#project-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .project {
+        flex: 0 0 100%;
+        margin-top: 20px;
+        clear: both;
+
+        div.name {
+          font-size: 1.1rem;
+          font-weight: bold;
+
+          img {
+            max-height: 1rem;
+          }
+        }
+
+        div.period {
+          color: $grey;
+          font-size: 0.9rem;
+        }
+
+        div.description {
+          color: $very-grey;
+          font-size: 0.95rem;
+          line-height: 22px;
+        }
+
+        ul.tech {
+          margin-top: 4px;
+          padding: 0px;
+          clear: both;
+
+          > li {
+            color: #0483c3;
+            float: left;
+            border-radius: 4px;
+            background: #e5f1ff;
+            padding: 0px 8px;
+            font-size: 0.9rem;
+            line-height: 22px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.icon a {
+  border: none;
+
+  :hover {
+    border: none;
+  }
+}
