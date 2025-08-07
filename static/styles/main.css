@@ -1,0 +1,105 @@
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #0483c3;
+}
+a:hover {
+  color: #0483c3;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding-left: 0;
+}
+
+body {
+  font-family: "Charter";
+  font-size: 21px;
+  color: #333;
+  line-height: 34px;
+  background-color: #fff;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 700px;
+}
+body header {
+  margin-top: 18px;
+  margin-bottom: 46px;
+}
+body .content img {
+  max-width: 100%;
+}
+body #content-index ul {
+  list-style: none;
+}
+body #content-projects div#project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+body #content-projects div#project-list .project {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  clear: both;
+}
+body #content-projects div#project-list .project div.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+body #content-projects div#project-list .project div.name img {
+  max-height: 1rem;
+}
+body #content-projects div#project-list .project div.period {
+  color: #888;
+  font-size: 0.9rem;
+}
+body #content-projects div#project-list .project div.description {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 22px;
+}
+body #content-projects div#project-list .project ul.tech {
+  margin-top: 4px;
+  padding: 0px;
+  clear: both;
+}
+body #content-projects div#project-list .project ul.tech > li {
+  color: #0483c3;
+  float: left;
+  border-radius: 4px;
+  background: #e5f1ff;
+  padding: 0px 8px;
+  font-size: 0.9rem;
+  line-height: 22px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.icon a {
+  border: none;
+}
+.icon a :hover {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
